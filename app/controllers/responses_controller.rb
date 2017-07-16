@@ -65,7 +65,7 @@ class ResponsesController < ApplicationController
 
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
-      username == 'admin' && password == 'staffordlong'
+      username == 'admin' && password == 'alienz'
     end
   end
 

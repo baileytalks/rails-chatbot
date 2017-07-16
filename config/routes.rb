@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'home/index'
-
   root 'home#index'
+
+  get 'admin', :to => 'admin#index'
 
   resources :responses
   resources :messages
