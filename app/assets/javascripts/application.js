@@ -79,7 +79,7 @@ $(document).ready(function() {
       );
       $('#'+counter).append(aliencontent.response);
       counter = counter + 1
-    },1700);
+    },1200);
 
     // If the threat level of the alien response is too high or low, the human
     // user sees a message and the game ends
@@ -93,7 +93,7 @@ $(document).ready(function() {
       }
       // If the game hasn't ended, the selection of chat options comes back
       $('.selector').show();
-    },3000);
+    },2000);
 
     // This prevents the page from reloading
     event.preventDefault();
