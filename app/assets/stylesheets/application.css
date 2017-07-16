@@ -1,0 +1,26 @@
+html, body {
+  width: 600px;
+  margin: auto;
+  background-color: gray;
+  font-family: monospace;
+}
+
+.message {
+}
+
+.alienchatbox {
+  float: right;
+  background-color: red;
+}
+
+.alienprofile {
+  float: left;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 5px;
+  height: auto;
+  width: auto;
+  max-width: 20%;
+  max-height: 20%;
+  background-color: white;
+}
