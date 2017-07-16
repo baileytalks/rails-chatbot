@@ -6,12 +6,6 @@ Use the chatbot to select your responses, and see if you can placate Vlod and sa
 
 If you're lucky enough to have admin access, go to the /admin page and create some potential messages for your users to select. The username is `admin` and the password is `alienz` (keep it to your yourself!).
 
-Using:
-* Ruby 2.4.1
-* Rails 5.1.2
-* Test framework: RSpec
-* VCS: GIT
-
 ## Getting started
 
 To clone the repo and get started:
@@ -35,9 +29,17 @@ Add a message and a threat level
 Click `Create Message`
 ````
 
+A screenshot of the final chatbot:
+
 ![Screenshot](https://raw.githubusercontent.com/baileytalks/rails-chatbot/master/app/assets/images/screenshot.png)
 
 ## Original Specification
+
+Using:
+* Ruby 2.4.1
+* Rails 5.1.2
+* Test framework: RSpec
+* VCS: GIT
 
 A user lands on the page and sends the first pre-written message to the bot (this is the root of the tree), they receive a response, for which they are then are presented with 2-3 optional possible pre-written messages to choose from to send back, each of which lead to a new 'response' from from the bot, and so on.
 
