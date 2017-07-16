@@ -5,26 +5,28 @@
   </div>
 </div>
 
-<div class='question'>What do you want to say?</div>
-<div class='options'>
-  <a href='#'><div class='first option'>
-    <%= @messages.order("RANDOM()")[0].content %>
-  </div></a>
-  <a href='#'><div class='second option'>
-    <%= @messages.order("RANDOM()")[1].content %>
-  </div></a>
-  <a href='#'><div class='third option'>
-    <%= @messages.order("RANDOM()")[3].content %>
-  </div></a>
-</div>
-<div class='options'>
-  <a href='#'><div class='fourth option'>
-    <%= @messages.order("RANDOM()")[4].content %>
-  </div></a>
-  <a href='#'><div class='fifth option'>
-    <%= @messages.order("RANDOM()")[5].content %>
-  </div></a>
-  <a href='#'><div class='sixth option'>
-    <%= @messages.order("RANDOM()")[6].content %>
-  </div></a>
+<div class='selector'>
+  <div class='question'>What do you want to say?</div>
+  <div class='options'>
+    <a href='#'><div class='first option'>
+      <%= @messages.order("RANDOM()")[0].content %>
+    </div></a>
+    <a href='#'><div class='second option'>
+      <%= @messages.order("RANDOM()")[1].content %>
+    </div></a>
+    <a href='#'><div class='third option'>
+      <%= @messages.order("RANDOM()")[3].content %>
+    </div></a>
+  </div>
+  <div class='options'>
+    <a href='#'><div class='fourth option'>
+      <%= @messages.order("RANDOM()")[4].content %>
+    </div></a>
+    <a href='#'><div class='fifth option'>
+      <%= @messages.order("RANDOM()")[5].content %>
+    </div></a>
+    <a href='#'><div class='sixth option'>
+      <%= @messages.order("RANDOM()")[6].content %>
+    </div></a>
+  </div>
 </div>

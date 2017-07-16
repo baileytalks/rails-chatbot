@@ -93,3 +93,7 @@ footer a:link {
   text-decoration: none;
   font-weight: normal;
 }
+
+.selector {
+  padding-bottom: 25px;
+}

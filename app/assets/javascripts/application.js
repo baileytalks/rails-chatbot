@@ -20,7 +20,10 @@ var counter = 2
 
 $(document).ready(function() {
   $('.option').click(function(event) {
+    $('.selector').hide();
+
     var thisclass = this.className.slice(0, -7)
+
     setTimeout(function() {
       var content = $('.' + thisclass).html();
       $('.alienmessage').last().after(
@@ -32,6 +35,7 @@ $(document).ready(function() {
       $('#'+counter).append(content);
       counter = counter + 1
     },500);
+
     setTimeout(function() {
       $('.message').last().after(
         $('<div/>')
@@ -43,6 +47,11 @@ $(document).ready(function() {
       $('#'+counter).append(aliencontent);
       counter = counter + 1
     },2000);
+
+    setTimeout(function() {
+      $('.selector').show();
+    },2500);
+
     event.preventDefault();
   });
 });
