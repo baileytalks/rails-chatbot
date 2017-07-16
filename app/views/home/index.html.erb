@@ -1,25 +1,24 @@
-<div class='wrapper'>
-  <div class='alienmessage'>
-    <img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>
-    <div class='alienchatbox'>
-      Greetings, human.
-    </div>
+<div class='alienmessage'>
+  <img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>
+  <div class='alienchatbox'>
+    Greetings, human.
   </div>
-  <div class='message hide'>
-    <img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>
-    <div class='chatbox'></div>
-  </div>
-  <div class='info'>What do you want to say?</div>
-  <div class='options'>
-    <a href='#'><div class='first option'>
-      <%= @messages.order("RANDOM()")[0].content %>
-    </div></a>
-    <a href='#'><div class='second option'>
-      <%= @messages.order("RANDOM()")[1].content %>
-    </div></a>
-    <a href='#'><div class='third option'>
-      <%= @messages.order("RANDOM()")[3].content %>
-    </div></a>
-  </div>
-  <div class='push'></div>
+</div>
+
+<div class='message hide'>
+  <img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>
+  <div class='chatbox'></div>
+</div>
+<div class='info'>What do you want to say?</div>
+
+<div class='options'>
+  <a href='#'><div class='first option'>
+    <%= @messages.order("RANDOM()")[0].content %>
+  </div></a>
+  <a href='#'><div class='second option'>
+    <%= @messages.order("RANDOM()")[1].content %>
+  </div></a>
+  <a href='#'><div class='third option'>
+    <%= @messages.order("RANDOM()")[3].content %>
+  </div></a>
 </div>

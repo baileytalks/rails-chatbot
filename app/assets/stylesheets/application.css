@@ -8,7 +8,7 @@ body {
 .alienmessage {
   margin-bottom: 30px;
   padding: 20px;
-  height: 120px;
+  height: 100px;
   overflow: hidden;
 }
 
@@ -24,16 +24,21 @@ body {
   float: left;
   border: 5px solid #8b9dc3;
   border-radius: 5px;
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.hide {
+  display: none;
 }
 
 .message {
   margin-bottom: 30px;
   padding: 20px;
-  height: 120px;
+  height: 100px;
   background-color: #dfe3ee;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .chatbox {
@@ -41,18 +46,15 @@ body {
   background-color: #8b9dc3;
   padding: 20px;
   border-radius: 5px;
+  color: white;
 }
 
 .profile {
   float: right;
   border: 5px solid #8b9dc3;
   border-radius: 5px;
-  max-width: 70%;
-  max-height: 70%;
-}
-
-.hide {
-  visibility: hidden;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .options {
@@ -79,7 +81,7 @@ footer {
   background-color: #dfe3ee;
   bottom: 0;
   left: 0;
-  height: 30px;
+  height: 26px;
   position: fixed;
   font-size: 11px;
   display: table;
