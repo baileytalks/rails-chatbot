@@ -16,6 +16,8 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
+var counter = 2
+
 $(document).ready(function() {
   $('.first').click(function(event) {
     setTimeout(function() {
@@ -23,18 +25,24 @@ $(document).ready(function() {
       $('.alienmessage').after(
         $('<div/>')
         .addClass('message')
+        // .attr('id', counter)
         .html("<img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>")
-        .prepend("<div class='chatbox'></div")
+        .prepend("<div class='chatbox' id='" + counter + "'></div")
       );
-      $('.chatbox').append(content);
+      $('#'+counter).append(content);
+      counter = counter + 1
     },500);
     setTimeout(function() {
       $('.message').after(
         $('<div/>')
         .addClass('alienmessage')
+        // .attr('id', counter)
         .html("<img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>")
-        .prepend("<div class='alienchatbox'></div")
+        .prepend("<div class='alienchatbox' id='" + counter + "'></div")
       );
+      var aliencontent = 'ARGH! HUMANS MUST DIE!'
+      $('#'+counter).append(aliencontent);
+      counter = counter + 1
     },2000);
     event.preventDefault();
   });
@@ -47,18 +55,24 @@ $(document).ready(function() {
       $('.alienmessage').after(
         $('<div/>')
         .addClass('message')
+        // .attr('id', counter)
         .html("<img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>")
-        .prepend("<div class='chatbox'></div")
+        .prepend("<div class='chatbox' id='" + counter + "'></div")
       );
-      $('.chatbox').append(content);
+      $('#'+counter).append(content);
+      counter = counter + 1
     },500);
     setTimeout(function() {
       $('.message').after(
         $('<div/>')
         .addClass('alienmessage')
+        // .attr('id', counter)
         .html("<img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>")
-        .prepend("<div class='alienchatbox'></div")
+        .prepend("<div class='alienchatbox' id='" + counter + "'></div")
       );
+      var aliencontent = 'ARGH! HUMANS MUST DIE!'
+      $('#'+counter).append(aliencontent);
+      counter = counter + 1
     },2000);
     event.preventDefault();
   });
@@ -71,18 +85,24 @@ $(document).ready(function() {
       $('.alienmessage').after(
         $('<div/>')
         .addClass('message')
+        // .attr('id', counter)
         .html("<img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>")
-        .prepend("<div class='chatbox'></div")
+        .prepend("<div class='chatbox' id='" + counter + "'></div")
       );
-      $('.chatbox').append(content);
+      $('#'+counter).append(content);
+      counter = counter + 1
     },500);
     setTimeout(function() {
       $('.message').after(
         $('<div/>')
         .addClass('alienmessage')
+        // .attr('id', counter)
         .html("<img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>")
-        .prepend("<div class='alienchatbox'></div")
+        .prepend("<div class='alienchatbox' id='" + counter + "'></div")
       );
+      var aliencontent = 'ARGH! HUMANS MUST DIE!'
+      $('#'+counter).append(aliencontent);
+      counter = counter + 1
     },2000);
     event.preventDefault();
   });
