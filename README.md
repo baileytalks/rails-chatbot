@@ -5,6 +5,10 @@
 * Test framework: RSpec
 * VCS: GIT
 
+bundle exec rspec
+
+
+
 ## Description
 
 A user lands on the page and sends the first pre-written message to the bot (this is the root of the tree), they receive a response, for which they are then are presented with 2-3 optional possible pre-written messages to choose from to send back, each of which lead to a new 'response' from from the bot, and so on.
