@@ -22,7 +22,7 @@ $(document).ready(function() {
   $('.first').click(function(event) {
     setTimeout(function() {
       var content = $('.first').html();
-      $('.alienmessage').after(
+      $('.alienmessage').last().after(
         $('<div/>')
         .addClass('message')
         // .attr('id', counter)
@@ -33,10 +33,9 @@ $(document).ready(function() {
       counter = counter + 1
     },500);
     setTimeout(function() {
-      $('.message').after(
+      $('.message').last().after(
         $('<div/>')
         .addClass('alienmessage')
-        // .attr('id', counter)
         .html("<img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>")
         .prepend("<div class='alienchatbox' id='" + counter + "'></div")
       );
@@ -52,10 +51,9 @@ $(document).ready(function() {
   $('.second').click(function(event) {
     setTimeout(function() {
       var content = $('.second').html();
-      $('.alienmessage').after(
+      $('.alienmessage').last().after(
         $('<div/>')
         .addClass('message')
-        // .attr('id', counter)
         .html("<img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>")
         .prepend("<div class='chatbox' id='" + counter + "'></div")
       );
@@ -63,10 +61,9 @@ $(document).ready(function() {
       counter = counter + 1
     },500);
     setTimeout(function() {
-      $('.message').after(
+      $('.message').last().after(
         $('<div/>')
         .addClass('alienmessage')
-        // .attr('id', counter)
         .html("<img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>")
         .prepend("<div class='alienchatbox' id='" + counter + "'></div")
       );
@@ -82,10 +79,9 @@ $(document).ready(function() {
   $('.third').click(function(event) {
     setTimeout(function() {
       var content = $('.third').html();
-      $('.alienmessage').after(
+      $('.alienmessage').last().after(
         $('<div/>')
         .addClass('message')
-        // .attr('id', counter)
         .html("<img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>")
         .prepend("<div class='chatbox' id='" + counter + "'></div")
       );
@@ -93,10 +89,9 @@ $(document).ready(function() {
       counter = counter + 1
     },500);
     setTimeout(function() {
-      $('.message').after(
+      $('.message').last().after(
         $('<div/>')
         .addClass('alienmessage')
-        // .attr('id', counter)
         .html("<img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>")
         .prepend("<div class='alienchatbox' id='" + counter + "'></div")
       );
