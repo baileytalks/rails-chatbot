@@ -1,5 +1,5 @@
 class ResponsesController < ApplicationController
-  before_action :set_response, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate, :set_response, only: [:show, :edit, :update, :destroy]
 
   # GET /responses
   # GET /responses.json
@@ -58,6 +58,14 @@ class ResponsesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to responses_url, notice: 'Response was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  protected
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == 'admin' && password == 'staffordlong'
     end
   end
 
