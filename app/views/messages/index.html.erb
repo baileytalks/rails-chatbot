@@ -2,7 +2,7 @@
 
 <h1>Messages from humankind to the alien overload</h1>
 
-<p>Here are the current potential messages that humankind can send to the alien overload.</p>
+<p>Here are the messages that humankind can send to the alien overload.</p>
 <p>Threat levels go from 1 (safe) to 3 (dangerous):</p>
 
 <table>
@@ -16,6 +16,7 @@
     <% @messages.each do |message| %>
       <tr>
         <td><%= message.content %></td>
+        <td><%= message.threat %></td>
         <td><%= link_to 'Show', message %></td>
         <td><%= link_to 'Edit', edit_message_path(message) %></td>
         <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,12 +1,14 @@
 <div class='alienmessage' id='1'>
   <img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>
   <div class='alienchatbox'>
-    Greetings, human.
+    <p>Greetings, human. My name is Vlop, your</p>
+    <p>new alien overlord.</p>
+    <p>What do you have to say on behalf of humankind?<p>
   </div>
 </div>
 
 <div class='selector'>
-  <div class='question'>What do you want to say?</div>
+  <div class='question'>How do you want to respond?</div>
   <div class='options'>
     <a href='#'><div class='first option'>
       <%= @messages.order("RANDOM()")[0].content %>

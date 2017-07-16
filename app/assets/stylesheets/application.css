@@ -5,10 +5,14 @@ body {
   font-family: monospace;
 }
 
+p {
+  line-height: 7px;
+}
+
 .alienmessage {
   margin-bottom: 30px;
-  padding: 20px;
-  height: 100px;
+  padding: 10px;
+  height: 110px;
   overflow: hidden;
 }
 
@@ -18,6 +22,7 @@ body {
   color: white;
   padding: 20px;
   border-radius: 5px;
+  color: #a8f2b1;
 }
 
 .alienprofile {
@@ -34,8 +39,8 @@ body {
 
 .message {
   margin-bottom: 30px;
-  padding: 20px;
-  height: 100px;
+  padding: 10px;
+  height: 90px;
   background-color: #dfe3ee;
   overflow: hidden;
   border-radius: 5px;
