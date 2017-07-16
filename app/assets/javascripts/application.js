@@ -18,8 +18,13 @@
 
 $(document).ready(function() {
   $('.first').click(function(event) {
-    $('.message').show();
     var content = $('.first').html();
+    $('.alienmessage').after(
+      $('<div/>')
+      .addClass('message')
+      .html("<img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>")
+      .prepend("<div class='chatbox'></div")
+    );
     $('.chatbox').append(content);
     event.preventDefault();
   });
@@ -27,17 +32,27 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('.second').click(function(event) {
-    $('.message').show();
     var content = $('.second').html();
+    $('.alienmessage').after(
+      $('<div/>')
+      .addClass('message')
+      .html("<img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>")
+      .prepend("<div class='chatbox'></div")
+    );
     $('.chatbox').append(content);
     event.preventDefault();
   });
 });
 
 $(document).ready(function() {
-  $('.second').click(function(event) {
-    $('.message').show();
+  $('.third').click(function(event) {
     var content = $('.third').html();
+    $('.alienmessage').after(
+      $('<div/>')
+      .addClass('message')
+      .html("<img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>")
+      .prepend("<div class='chatbox'></div")
+    );
     $('.chatbox').append(content);
     event.preventDefault();
   });
