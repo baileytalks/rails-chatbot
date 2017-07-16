@@ -1,26 +1,56 @@
 html, body {
   width: 600px;
   margin: auto;
-  background-color: gray;
+  background-color: #fefefe;
   font-family: monospace;
 }
 
-.message {
+.alienmessage {
+  margin-bottom: 30px;
+  padding: 20px;
+  height: 120px;
+  overflow: hidden;
 }
 
 .alienchatbox {
   float: right;
-  background-color: red;
+  background-color: #8b9dc3;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .alienprofile {
   float: left;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding: 5px;
-  height: auto;
-  width: auto;
-  max-width: 20%;
-  max-height: 20%;
-  background-color: white;
+  border: 5px solid #8b9dc3;
+  border-radius: 5px;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.message {
+  margin-bottom: 30px;
+  padding: 20px;
+  height: 120px;
+  background-color: #dfe3ee;
+  overflow: hidden;
+}
+
+.chatbox {
+  float: left;
+  background-color: #8b9dc3;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.profile {
+  float: right;
+  border: 5px solid #8b9dc3;
+  border-radius: 5px;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.hide {
+  visibility: hidden;
 }
