@@ -1,11 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Responses</h1>
+<h1>Responses from the alien overload</h1>
+
+<p>Here are the current potential messages that humankind can send to the alien overload.</p>
+<p>Threat levels go from 1 (safe) to 3 (dangerous):</p>
 
 <table>
   <thead>
     <tr>
-      <th>Content</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,6 +16,7 @@
     <% @responses.each do |response| %>
       <tr>
         <td><%= response.content %></td>
+        <td><%= response.threat %></td>
         <td><%= link_to 'Show', response %></td>
         <td><%= link_to 'Edit', edit_response_path(response) %></td>
         <td><%= link_to 'Destroy', response, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -16,6 +16,11 @@
     <%= form.text_area :content, id: :response_content %>
   </div>
 
+  <div class="field">
+    <%= form.label :threat %>
+    <%= form.text_field :threat, "size" => 1, id: :response_threat %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

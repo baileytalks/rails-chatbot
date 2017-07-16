@@ -54,3 +54,21 @@ html, body {
 .hide {
   visibility: hidden;
 }
+
+.options {
+  margin-bottom: 30px;
+  padding: 20px;
+  height: 120px;
+  column-count: 3;
+  overflow: hidden;
+}
+
+.option {
+  background-color: #dfe3ee;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.info {
+  text-align: center;
+}
