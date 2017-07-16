@@ -66,6 +66,7 @@ html, body {
 .option {
   background-color: #dfe3ee;
   padding: 20px;
+  height: 40px;
   border-radius: 5px;
 }
 

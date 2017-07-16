@@ -11,12 +11,12 @@
 <div class='info'>What do you want to say?</div>
 <div class='options'>
   <a href='#'><div class='first option'>
-    <%= @firstresponses.content %>
+    <%= @messages.order("RANDOM()")[0].content %>
   </div></a>
   <a href='#'><div class='second option'>
-    <%= @firstresponses.content %>
+    <%= @messages.order("RANDOM()")[1].content %>
   </div></a>
   <a href='#'><div class='third option'>
-    <%= @firstresponses.content %>
+    <%= @messages.order("RANDOM()")[3].content %>
   </div></a>
 </div>
