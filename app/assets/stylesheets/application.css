@@ -58,9 +58,8 @@ body {
 }
 
 .options {
-  margin-bottom: 30px;
-  padding: 20px;
-  height: 120px;
+  padding: 10px;
+  height: 75px;
   column-count: 3;
   overflow: hidden;
 }
@@ -68,11 +67,11 @@ body {
 .option {
   background-color: #dfe3ee;
   padding: 20px;
-  height: 40px;
+  height: 35px;
   border-radius: 5px;
 }
 
-.info {
+.question {
   text-align: center;
 }
 

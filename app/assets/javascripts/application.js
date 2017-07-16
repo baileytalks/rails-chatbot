@@ -19,66 +19,10 @@
 var counter = 2
 
 $(document).ready(function() {
-  $('.first').click(function(event) {
+  $('.option').click(function(event) {
+    var thisclass = this.className.slice(0, -7)
     setTimeout(function() {
-      var content = $('.first').html();
-      $('.alienmessage').last().after(
-        $('<div/>')
-        .addClass('message')
-        // .attr('id', counter)
-        .html("<img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>")
-        .prepend("<div class='chatbox' id='" + counter + "'></div")
-      );
-      $('#'+counter).append(content);
-      counter = counter + 1
-    },500);
-    setTimeout(function() {
-      $('.message').last().after(
-        $('<div/>')
-        .addClass('alienmessage')
-        .html("<img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>")
-        .prepend("<div class='alienchatbox' id='" + counter + "'></div")
-      );
-      var aliencontent = 'ARGH! HUMANS MUST DIE!'
-      $('#'+counter).append(aliencontent);
-      counter = counter + 1
-    },2000);
-    event.preventDefault();
-  });
-});
-
-$(document).ready(function() {
-  $('.second').click(function(event) {
-    setTimeout(function() {
-      var content = $('.second').html();
-      $('.alienmessage').last().after(
-        $('<div/>')
-        .addClass('message')
-        .html("<img class='profile' src='https://blog.za3k.com/wp-content/uploads/2015/03/default_profile_3.png'>")
-        .prepend("<div class='chatbox' id='" + counter + "'></div")
-      );
-      $('#'+counter).append(content);
-      counter = counter + 1
-    },500);
-    setTimeout(function() {
-      $('.message').last().after(
-        $('<div/>')
-        .addClass('alienmessage')
-        .html("<img class='alienprofile' src='https://media.giphy.com/media/r9u2BEXZUzGo/giphy.gif'>")
-        .prepend("<div class='alienchatbox' id='" + counter + "'></div")
-      );
-      var aliencontent = 'ARGH! HUMANS MUST DIE!'
-      $('#'+counter).append(aliencontent);
-      counter = counter + 1
-    },2000);
-    event.preventDefault();
-  });
-});
-
-$(document).ready(function() {
-  $('.third').click(function(event) {
-    setTimeout(function() {
-      var content = $('.third').html();
+      var content = $('.' + thisclass).html();
       $('.alienmessage').last().after(
         $('<div/>')
         .addClass('message')
