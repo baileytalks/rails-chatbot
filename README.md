@@ -33,6 +33,8 @@ A screenshot of the final chatbot:
 
 ![Screenshot](https://raw.githubusercontent.com/baileytalks/rails-chatbot/master/app/assets/images/screenshot.png)
 
+![End of the game](https://raw.githubusercontent.com/baileytalks/rails-chatbot/master/app/assets/images/endofgame.png)
+
 ## Original Specification
 
 Using:
