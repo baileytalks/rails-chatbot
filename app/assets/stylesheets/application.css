@@ -1,4 +1,4 @@
-html, body {
+body {
   width: 600px;
   margin: auto;
   background-color: #fefefe;
@@ -72,4 +72,23 @@ html, body {
 
 .info {
   text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #dfe3ee;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  position: fixed;
+  font-size: 11px;
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer a:link {
+  text-decoration: none;
+  font-weight: normal;
 }
