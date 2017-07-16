@@ -11,24 +11,48 @@
   <div class='question'>How do you want to respond?</div>
   <div class='options'>
     <a href='#'><div class='first option'>
-      <%= @messages.order("RANDOM()")[0].content %>
+      <%=
+      if !@array.blank?
+        @array[0].content
+      end
+      %>
     </div></a>
     <a href='#'><div class='second option'>
-      <%= @messages.order("RANDOM()")[1].content %>
+      <%=
+      if !@array.blank?
+        @array[1].content
+      end
+      %>
     </div></a>
     <a href='#'><div class='third option'>
-      <%= @messages.order("RANDOM()")[3].content %>
+      <%=
+      if !@array.blank?
+        @array[2].content
+      end
+      %>
     </div></a>
   </div>
   <div class='options'>
     <a href='#'><div class='fourth option'>
-      <%= @messages.order("RANDOM()")[4].content %>
+      <%=
+      if !@array.blank?
+        @array[3].content
+      end
+      %>
     </div></a>
     <a href='#'><div class='fifth option'>
-      <%= @messages.order("RANDOM()")[5].content %>
+      <%=
+      if !@array.blank?
+        @array[4].content
+      end
+      %>
     </div></a>
     <a href='#'><div class='sixth option'>
-      <%= @messages.order("RANDOM()")[6].content %>
+      <%=
+      if !@array.blank?
+        @array[5].content
+      end
+      %>
     </div></a>
   </div>
 </div>
