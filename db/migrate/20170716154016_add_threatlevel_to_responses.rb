@@ -1,5 +1,5 @@
 class AddThreatlevelToResponses < ActiveRecord::Migration[5.1]
   def change
-    add_column :responses, :threat, :integer
+    add_column :responses, :threat, :text
   end
 end

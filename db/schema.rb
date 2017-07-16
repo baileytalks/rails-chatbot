@@ -16,14 +16,14 @@ ActiveRecord::Schema.define(version: 20170716154030) do
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "threat"
+    t.text "threat"
   end
 
   create_table "responses", force: :cascade do |t|
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "threat"
+    t.text "threat"
   end
 
   create_table "users", force: :cascade do |t|
