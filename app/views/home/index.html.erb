@@ -12,21 +12,27 @@
   <div class='options'>
     <a href='#'><div class='first option'>
       <%=
-      if !@array.blank?
+      if @array[0] == nil
+        'Admin? Add a message'
+      else
         @array[0].content
       end
       %>
     </div></a>
     <a href='#'><div class='second option'>
       <%=
-      if !@array.blank?
+      if @array[1] == nil
+        'Admin? Add a message'
+      else
         @array[1].content
       end
       %>
     </div></a>
     <a href='#'><div class='third option'>
       <%=
-      if !@array.blank?
+      if @array[2] == nil
+        'Admin? Add a message'
+      else
         @array[2].content
       end
       %>
@@ -35,21 +41,27 @@
   <div class='options'>
     <a href='#'><div class='fourth option'>
       <%=
-      if !@array.blank?
+      if @array[3] == nil
+        'Admin? Add a message'
+      else
         @array[3].content
       end
       %>
     </div></a>
     <a href='#'><div class='fifth option'>
       <%=
-      if !@array.blank?
+      if @array[4] == nil
+        'Admin? Add a message'
+      else
         @array[4].content
       end
       %>
     </div></a>
     <a href='#'><div class='sixth option'>
       <%=
-      if !@array.blank?
+      if @array[5] == nil
+        'Admin? Add a message'
+      else
         @array[5].content
       end
       %>
