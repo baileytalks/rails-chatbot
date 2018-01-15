@@ -16,7 +16,7 @@ describe AdminController do
   describe "GET 'admin'" do
     it "should be successful" do
       get 'index'
-      response.should be_success
+      expect(response).to be_success
     end
   end
 
